@@ -6,14 +6,8 @@ class Solution {
         {
            if(result.containsKey(nums[i])){
                if(i - result.get(nums[i]) <=k) return true;
-               else{
-                 result.put(nums[i], i);
-               }
            }
-           else {
              result.put(nums[i], i);
-           }
-
         }
         return false;
     }
