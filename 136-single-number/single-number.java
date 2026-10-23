@@ -6,8 +6,8 @@ class Solution {
             map.put(nums[i], map.getOrDefault(nums[i],0) +1);
         }
 
-        for(Map.Entry<Integer,Integer> item : map.entrySet()){
-            if(item.getValue() == 1) return item.getKey();
+        for(int item : map.keySet()){
+            if(map.get(item) == 1) return item;
         }
 
         return 0;
